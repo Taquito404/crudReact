@@ -1,0 +1,148 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+$primary: #EEF9F7;
+$secondary:#CDECE6;
+$danger: #D90D43;
+$success: #04AC8C;
+$contrast:#5881A6;
+$shadow:#C5D1DB;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  
+}
+.radius{
+  border-radius: 50%;
+}
+.addButton{
+  cursor: pointer;
+  fill: $success;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+}
+
+ .scroll{
+  height: 80vh; 
+  margin: 2rem auto;
+  overflow: auto;
+  width: 80%;
+ }
+  table.table{
+    width: 100%;
+    background-color:$primary;
+    border-radius: 1rem;
+  }
+
+
+nav{
+  height: 3rem;
+  padding:.2rem 1rem;
+  background-color:$secondary;
+  position: sticky;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div button:first-of-type{
+    margin-right: 1rem;
+  }
+  .bi-github{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 50%;
+    :hover{
+      cursor: pointer;
+    }
+  }
+}
+.noStyle{
+  background-color: transparent!important;
+  border-style: none;
+  size: auto;
+  border-radius: 50%;
+  color: black;
+}
+
+.modalBackground{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.589);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modalContainer {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    background-color:#23606E;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    h2{
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 1.5rem ;
+      color: white;
+    }
+    form{ 
+      font-size: 1rem;
+     label{
+      font-size: larger;
+      color: white;
+     }
+      span{
+        color: #FACFCE;
+        font-size: smaller;
+      }
+      input{
+        width: 60%;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+    div{
+      display: flex;
+      justify-content: space-between;
+      margin: .5rem 0;
+    }
+  .footer{
+    margin: .5rem auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }}
+  }
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
