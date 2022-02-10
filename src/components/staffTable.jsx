@@ -62,7 +62,7 @@ const StaffTable = (props) => {
             ))
           ) : (
             <tr>
-              <td colSpan={3}>No users</td>
+              <td colSpan={5}>No hay personal registrado</td>
             </tr>
           )}
         </tbody>

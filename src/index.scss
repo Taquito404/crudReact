@@ -49,12 +49,17 @@ body {
   margin: 2rem auto;
   overflow: auto;
   width: 80%;
- }
+  border-radius: 1rem;
   table.table{
     width: 100%;
     background-color:$primary;
     border-radius: 1rem;
+    button:first-of-type{
+margin-right: .5rem;
+    }
   }
+ }
+ 
 
 
 nav{
